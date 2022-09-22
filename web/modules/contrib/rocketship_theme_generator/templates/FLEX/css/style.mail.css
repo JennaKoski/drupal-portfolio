@@ -1,0 +1,238 @@
+:root {
+  --clr-spot-1: 196 100% 53%;
+  --clr-spot-2: 337, 100%, 44%;
+  --clr-spot-3: 207, 100%, 16%;
+  --clr-black: 0, 0%, 0%;
+  --clr-white: 0, 0%, 100%;
+  --clr-off-white: 0, 0%, 95%;
+  --clr-gray-light-1: 0, 0%, 90%;
+  --clr-gray-light-2: 0, 0%, 82%;
+  --clr-gray-light-3: 0, 0%, 64%;
+  --clr-gray: 0, 0%, 44%;
+  --clr-gray-dark: 0, 0%, 33%;
+  --clr-gray-dark-2: 0, 0%, 13%;
+  --clr-base: 0, 0%, 19%;
+  --clr-base-dark: 0, 0%, 29%;
+  --clr-base-bg: 0, 0%, 100%;
+  --clr-heading: 0, 0%, 19%;
+  --clr-link: var(--clr-spot-2);
+  --clr-link-hover: var(--clr-spot-1);
+  --clr-link-active: var(--clr-spot-1);
+  --clr-text-link: var(--clr-spot-2);
+  --clr-text-link-hover: var(--clr-spot-2);
+  --clr-text-link-active: var(--clr-spot-1);
+  --clr-button: var(--clr-white);
+  --clr-button-bg: var(--clr-spot-1);
+  --clr-button-hover: var(--clr-white);
+  --clr-button-hover-bg: var(--clr-spot-2);
+  --clr-border: var(--clr-gray-light-2);
+  --clr-header-top-bg: var(--clr-off-white);
+  --clr-navigation-bg: var(--clr-spot-1);
+  --clr-nav-submenu: var(--clr-spot-1-light);
+  --clr-mobile-nav: var(--clr-base);
+  --clr-mobile-nav-bg: var(--clr-gray-light-3);
+  --clr-mobile-nav-open: var(--clr-white);
+  --clr-mobile-nav-open-bg: var(--clr-spot-1);
+  --clr-doormat: var(--clr-gray-light-1);
+  --clr-doormat-bg: var(--clr-gray-dark-2);
+  --clr-footer: var(--clr-white);
+  --clr-footer-bg: var(--clr-black);
+  --clr-tabs-background: var(--clr-gray-dark);
+  --clr-tab-text: var(--clr-white);
+  --clr-tab-bg: var(--clr-gray);
+  --clr-tab-bg-hover: var(--clr-link);
+  --clr-tab-bg-active: var(--clr-link);
+  --clr-tab-bg-active-2: var(--clr-white);
+  --clr-error: 6, 78%, 57%;
+  --clr-error-dark: 6, 63%, 46%;
+  --clr-status: 150, 52%, 51%;
+  --clr-status-dark: 156, 100%, 35%;
+  --clr-warning: 32, 82%, 56%;
+  --clr-warning-dark: 16, 87%, 62%;
+  --clr-neutral: 203, 100%, 37%;
+  --clr-placeholder: var(--clr-gray-light-2);
+  --clr-form: var(--clr-base);
+  --clr-form-border: var(--clr-border);
+  --clr-form-inactive: var(--clr-gray-light-1);
+  --clr-form-active: var(--clr-spot-1);
+  --clr-form-active-border: var(--clr-spot-1-light);
+  --clr-form-disabled: var(--clr-gray-light-1);
+  --clr-form-disabled-bg: var(--clr-white);
+  --clr-form-disabled-border: var(--clr-gray-light-1);
+  --clr-form-error-border: var(--clr-error);
+}
+
+#outlook a {
+  padding: 0;
+}
+
+/* Force Outlook to provide a "view in browser" button. */
+.ReadMsgBody {
+  width: 100%;
+}
+
+.ExternalClass {
+  width: 100%;
+  line-height: 100%;
+}
+
+/* Forces Outlook.com to display emails at full width */
+/* Forces Outlook.com to display normal line spacing, here is more on that:
+http://www.emailonacid.com/forum/viewthread/43/
+*/
+.ExternalClass h1,
+.ExternalClass h2,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div {
+  line-height: 100%;
+}
+
+/* Forces Outlook.com to display normal line spacing, here is more on that:
+http://www.emailonacid.com/forum/viewthread/43/
+*/
+body {
+  margin: 0;
+  /* Resets all body margins and padding to 0 for good measure */
+  padding: 0;
+  width: 100% !important;
+  -webkit-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+}
+
+/* Prevents Webkit and Windows Mobile
+platforms from changing default font sizes. */
+img {
+  height: auto;
+  border: 0;
+  text-decoration: none;
+  line-height: 100%;
+  outline: none;
+}
+
+table td {
+  border-collapse: collapse;
+}
+
+/* This resolves the Outlook 07, 10, and Gmail td padding issue.  Here's more info:
+  http://www.ianhoar.com/2008/04/29/outlook-2007-borders-and-1px-padding-on-table-cells
+  http://www.campaignmonitor.com/blog/post/3392/1px-borders-padding-on-table-cells-in-outlook-07
+  */
+#mimemail-body,
+#mimemail-body-bg {
+  margin: 0;
+  padding: 0;
+  height: 100% !important;
+  width: 100% !important;
+  background-color: #efefef;
+}
+
+#mail-content {
+  background: hsl(var(--clr-white));
+}
+
+td,
+th {
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: hsl(var(--clr-base));
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin-bottom: 0;
+  padding-bottom: 10px;
+  font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  line-height: 1.2;
+  font-weight: bold;
+  color: hsl(var(--clr-heading));
+}
+
+h2 {
+  font-size: 18px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 13px;
+}
+
+a {
+  text-decoration: underline;
+  color: hsl(var(--clr-spot-2));
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 0 none;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+}
+table th,
+table td {
+  padding: 0;
+  border-collapse: collapse;
+  mso-table-lspace: 0pt;
+  mso-table-rspace: 0pt;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-align: left;
+}
+
+.field-name-commerce-line-items table th.views-field-commerce-unit-price, .field-name-commerce-line-items table th.views-field-quantity, .field-name-commerce-line-items table th.views-field-commerce-total, .field-name-commerce-line-items table th.component-total,
+.field-name-commerce-line-items table td.views-field-commerce-unit-price,
+.field-name-commerce-line-items table td.views-field-quantity,
+.field-name-commerce-line-items table td.views-field-commerce-total,
+.field-name-commerce-line-items table td.component-total {
+  width: 100px;
+  text-align: right;
+}
+.field-name-commerce-line-items table th {
+  padding: 5px 10px;
+  border: 1px solid hsl(var(--clr-white));
+  font-size: 14px;
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-spot-1));
+}
+.field-name-commerce-line-items table td {
+  padding: 5px 10px;
+  border: 1px solid hsl(var(--clr-white));
+  background-color: hsl(var(--clr-border));
+}
+.field-name-commerce-line-items table tr.odd td {
+  border-color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-border));
+}
+
+.commerce-price-formatted-components th,
+.commerce-price-formatted-components td {
+  padding: 5px 10px;
+  border: 1px solid hsl(var(--clr-white));
+  font-size: 14px;
+  font-weight: bold;
+  color: hsl(var(--clr-white));
+  background-color: hsl(var(--clr-gray-light-3));
+}
+.commerce-price-formatted-components .component-type-commerce-price-formatted-amount td {
+  border: 1px solid hsl(var(--clr-white));
+  background-color: hsl(var(--clr-gray-light-3));
+}
+.commerce-price-formatted-components .component-total {
+  width: 100px;
+  text-align: right;
+}
+.field-label {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: hsl(var(--clr-heading));
+}

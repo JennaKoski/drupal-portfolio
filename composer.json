@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9.4",
         "drupal/core-recommended": "^9.4",
         "drupal/devel": "^4.1",
+        "drupal/rocketship_theme_generator": "^3.7",
         "drush/drush": "^11.1"
     },
     "conflict": {

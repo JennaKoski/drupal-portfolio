@@ -1,0 +1,324 @@
+:root {
+  --clr-spot-1: 196 100% 53%;
+  --clr-spot-1-light: 196 100% 63%;
+  --clr-spot-2: 337, 100%, 44%;
+  --clr-spot-3: 207, 100%, 16%;
+  --clr-black: 0, 0%, 0%;
+  --clr-white: 0, 0%, 100%;
+  --clr-off-white: 0, 0%, 95%;
+  --clr-gray-light-1: 0, 0%, 90%;
+  --clr-gray-light-2: 0, 0%, 82%;
+  --clr-gray-light-3: 0, 0%, 64%;
+  --clr-gray: 0, 0%, 44%;
+  --clr-base: 0, 0%, 19%;
+  --clr-base-dark: 0, 0%, 29%;
+  --clr-base-bg: 0, 0%, 100%;
+  --clr-heading: 0, 0%, 19%;
+  --clr-link: var(--clr-spot-2);
+  --clr-link-hover: var(--clr-spot-1);
+  --clr-link-active: var(--clr-spot-1);
+  --clr-text-link: var(--clr-spot-2);
+  --clr-text-link-hover: var(--clr-spot-2);
+  --clr-text-link-active: var(--clr-spot-1);
+  --clr-button: var(--clr-white);
+  --clr-button-bg: var(--clr-spot-1);
+  --clr-button-hover: var(--clr-white);
+  --clr-button-hover-bg: var(--clr-spot-2);
+  --clr-border: var(--clr-gray-light-2);
+  --clr-header-top-bg: var(--clr-off-white);
+  --clr-navigation-bg: var(--clr-spot-1);
+  --clr-doormat-bg: var(--clr-gray-light-2);
+  --clr-nav-submenu: var(--clr-spot-1-light);
+  --clr-mobile-nav: var(--clr-base);
+  --clr-mobile-nav-bg: var(--clr-gray-light-3);
+  --clr-mobile-nav-open: var(--clr-white);
+  --clr-mobile-nav-open-bg: var(--clr-spot-1);
+  --clr-tabs-background: var(--clr-gray-dark);
+  --clr-tab-text: var(--clr-white);
+  --clr-tab-bg: var(--clr-gray-light-1);
+  --clr-tab-bg-hover: var(--clr-link);
+  --clr-tab-bg-active: var(--clr-link);
+  --clr-tab-bg-active-2: var(--clr-white);
+  --clr-error: 6, 78%, 57%;
+  --clr-error-dark: 6, 63%, 46%;
+  --clr-status: 150, 52%, 51%;
+  --clr-status-dark: 156, 100%, 35%;
+  --clr-warning: 32, 82%, 56%;
+  --clr-warning-dark: 16, 87%, 62%;
+  --clr-neutral: 203, 100%, 37%;
+  --clr-placeholder: var(--clr-gray-light-2);
+  --clr-form: var(--clr-base);
+  --clr-form-border: var(--clr-border);
+  --clr-form-inactive: var(--clr-gray-light-1);
+  --clr-form-active: var(--clr-spot-1);
+  --clr-form-active-border: var(--clr-spot-1-light);
+  --clr-form-disabled: var(--clr-gray-light-1);
+  --clr-form-disabled-bg: var(--clr-white);
+  --clr-form-disabled-border: var(--clr-gray-light-1);
+  --clr-form-error-border: var(--clr-error);
+}
+
+/**
+ * Square mixin
+ *
+ * @param [Number] $dimensions = the height and width of the element
+ */
+/* stylelint-disable */
+/* stylelint-enable */
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FontAwesome/fa-regular-400.woff2") format("woff2"), url("../fonts/FontAwesome/fa-regular-400.woff") format("woff");
+  font-display: block;
+}
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/FontAwesome/fa-solid-900.woff2") format("woff2"), url("../fonts/FontAwesome/fa-solid-900.woff") format("woff");
+  font-display: block;
+}
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/FontAwesome/fa-brands-400.woff2") format("woff2"), url("../fonts/FontAwesome/fa-brands-400.woff") format("woff");
+  font-display: block;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F";
+}
+/* cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116";
+}
+/* greek-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+1F00-1FFF";
+}
+/* greek */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0370-03FF";
+}
+/* vietnamese */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB";
+}
+/* latin-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF";
+}
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-italic-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-italic-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD";
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F";
+}
+/* cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116";
+}
+/* greek-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+1F00-1FFF";
+}
+/* greek */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0370-03FF";
+}
+/* vietnamese */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB";
+}
+/* latin-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF";
+}
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/OpenSans/opensans-regular-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-regular-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD";
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F";
+}
+/* cyrillic */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116";
+}
+/* greek-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+1F00-1FFF";
+}
+/* greek */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0370-03FF";
+}
+/* vietnamese */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB";
+}
+/* latin-ext */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF";
+}
+/* latin */
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/OpenSans/opensans-bold-webfont.woff2") format("woff2"), url("../fonts/OpenSans/opensans-bold-webfont.woff") format("woff");
+  font-display: swap;
+  unicode-range: "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD";
+}
+/*
+.layout-field-bg-color {
+
+  .white {
+    background: hsl(var(--clr-off-white));
+    color: hsl(var(--clr-black));
+    a {
+      color: hsl(var(--clr-black));
+    }
+    a:hover,
+    a:focus,
+    a:active,
+    a.is-active {
+      color: hsl(var(--clr-black));
+    }
+  }
+
+  .grey {
+    background: hsl(var(--clr-gray-light-1));
+    color: hsl(var(--clr-black));
+    a {
+      color: hsl(var(--clr-black));
+    }
+    a:hover,
+    a:focus,
+    a:active,
+    a.is-active {
+      color: hsl(var(--clr-black));
+    }
+  }
+
+  .spot_01 {
+    background: hsl(var(--clr-spot-1));
+    color: hsl(var(--clr-white));
+    a {
+      color: hsl(var(--clr-white));
+    }
+    a:hover,
+    a:focus,
+    a:active,
+    a.is-active {
+      color: hsl(var(--clr-white));
+    }
+  }
+
+}
+*/

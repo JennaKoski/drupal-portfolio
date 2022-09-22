@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ab62df25e9660f34444ac1af589e2e16",
+    "content-hash": "e1e95f98962269a084a3f53be78e30ab",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1868,6 +1868,55 @@
             }
         },
         {
+            "name": "drupal/components",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/components.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/components-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "9b083c2f845ff2e1a1632efcf24f88cecd7479cc"
+            },
+            "require": {
+                "drupal/core": "^8.7.7 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1618861606",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095",
+                    "email": "virtually.johnalbin@gmail.com"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                }
+            ],
+            "description": "Registers folders of components defined by your theme or module as Twig namespaces",
+            "homepage": "https://drupal.org/project/components",
+            "support": {
+                "source": "https://git.drupalcode.org/project/components"
+            }
+        },
+        {
             "name": "drupal/core",
             "version": "9.4.6",
             "source": {
@@ -2263,6 +2312,127 @@
                 "source": "https://gitlab.com/drupalspoons/devel",
                 "issues": "https://gitlab.com/drupalspoons/devel/-/issues",
                 "slack": "https://drupal.slack.com/archives/C012WAW1MH6"
+            }
+        },
+        {
+            "name": "drupal/rocketship_theme_generator",
+            "version": "3.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/rocketship_theme_generator.git",
+                "reference": "3.7.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/rocketship_theme_generator-3.7.2.zip",
+                "reference": "3.7.2",
+                "shasum": "4fd78fb1b51164b85b7b00eebb73dd8d88143660"
+            },
+            "require": {
+                "drupal/components": "*",
+                "drupal/core": "^8.9 || ^9",
+                "drupal/unified_twig_ext": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.7.2",
+                    "datestamp": "1657036082",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Rembrand Le Compte",
+                    "homepage": "https://www.drupal.org/u/rembrandx",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Jolidog",
+                    "homepage": "https://www.drupal.org/user/347132"
+                },
+                {
+                    "name": "rembrandx",
+                    "homepage": "https://www.drupal.org/user/465048"
+                },
+                {
+                    "name": "rubendello",
+                    "homepage": "https://www.drupal.org/user/1372292"
+                }
+            ],
+            "description": "A module to generate component-based themes for use with Dropsolid Rocketship ecosystem",
+            "homepage": "https://drupal.org/project/rocketship_theme_generator",
+            "support": {
+                "source": "https://git.drupalcode.org/project/rocketship_theme_generator",
+                "docs": "https://drupal.org/project/rocketship_theme_generator"
+            }
+        },
+        {
+            "name": "drupal/unified_twig_ext",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/unified_twig_ext.git",
+                "reference": "1.0.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/unified_twig_ext-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "8aa03e2d9d8ef00aec2b0f84c79ef76000179b42"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0",
+                    "datestamp": "1594897928",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Salem Ghoweri",
+                    "homepage": "https://www.drupal.org/user/137505",
+                    "role": "Contributor"
+                },
+                {
+                    "name": "Grayle",
+                    "homepage": "https://www.drupal.org/user/3145497"
+                },
+                {
+                    "name": "evanmwillhite",
+                    "homepage": "https://www.drupal.org/user/562168"
+                },
+                {
+                    "name": "rembrandx",
+                    "homepage": "https://www.drupal.org/user/465048"
+                },
+                {
+                    "name": "sghoweri",
+                    "homepage": "https://www.drupal.org/user/2175670"
+                }
+            ],
+            "description": "Share Pattern Lab's custom Twig extensions with Drupal 8.",
+            "homepage": "https://www.drupal.org/project/unified_twig_ext",
+            "support": {
+                "source": "https://github.com/drupal-pattern-lab/unified-twig-extensions.git"
             }
         },
         {
