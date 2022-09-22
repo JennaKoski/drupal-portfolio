@@ -1,0 +1,16 @@
+name: Jenna theme
+type: theme
+description: A custom theme made for my practice drupal portfolio
+base theme: false
+core_version_requirement: ^8 || ^9
+version: 1.0.0
+
+libraries:
+  - jenna_theme/global-style
+
+regions:
+  header: header
+  menu: menu
+  content: content
+  sidebar: sidebar
+  footer: footer

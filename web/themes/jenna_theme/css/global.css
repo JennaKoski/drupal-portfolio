@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  font-family: "Open Sans";
+  overflow-x: hidden;
+}
+
+a,
+a:active,
+a:hover,
+a:visited {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+.header {
+  background: #1abc9c;
+}
+
+.content {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.footer {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  background-color: #13171c;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  bottom: 0;
+}
