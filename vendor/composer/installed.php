@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '9e9a9bc81abe688823b2bac0fdb301029287720d',
+        'reference' => '273fbac047434cce601fbd8df7268da94f945038',
         'name' => 'drupal/recommended-project',
         'dev' => true,
     ),
@@ -235,6 +235,15 @@
             'reference' => '3.1.2',
             'dev_requirement' => false,
         ),
+        'drupal/bootstrap' => array(
+            'pretty_version' => '3.25.0',
+            'version' => '3.25.0.0',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../web/themes/contrib/bootstrap',
+            'aliases' => array(),
+            'reference' => '8.x-3.25',
+            'dev_requirement' => false,
+        ),
         'drupal/components' => array(
             'pretty_version' => '2.4.0',
             'version' => '2.4.0.0',
@@ -445,7 +454,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '9e9a9bc81abe688823b2bac0fdb301029287720d',
+            'reference' => '273fbac047434cce601fbd8df7268da94f945038',
             'dev_requirement' => false,
         ),
         'drupal/rocketship_theme_generator' => array(

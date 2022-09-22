@@ -1,0 +1,8 @@
+rocketship_module.example:
+  path: '/rocketship-module/example'
+  defaults:
+    _title: 'Example'
+    _controller: '\Drupal\rocketship_module\Controller\RocketshipModuleController::build'
+  requirements:
+    _permission: 'access content'
+
