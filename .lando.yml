@@ -1,0 +1,4 @@
+name: drupal-portfolio-jenna
+recipe: drupal9
+config:
+  webroot: web
